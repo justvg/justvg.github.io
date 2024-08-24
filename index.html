@@ -1,7 +1,136 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Geovar - Graphics Programmer</title>
+        <meta name="description" content="Geovar - Graphics Programmer"/>
+    </head>
+
+    <style>
+        html,body {
+            display: flex;
+            font-family: 'Menlo',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+            color: rgba(255, 255, 255, 0.7);
+            background: #000000FF;
+            justify-content: center;
+            font-size: clamp(14px, calc(14.00px + 0.00vw), 14px);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            --FontSize-Large: clamp(18px, calc(3.71px + 3.81vw), 25px);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header-image {
+            width: 20%;
+            border-radius: 50%;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .header {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: var(--FontSize-Large);
+            margin-bottom: 0px;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            line-height: 1.25;
+        }
+
+        .header2 {
+            color: #ffffff;
+            margin-bottom: 0px;
+        }
+
+        .header3 {
+            color: #ffffff;
+            margin-bottom: 0px;
+        }
+
+        .experience {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .experience-time {
+            white-space: nowrap;
+            width: 150px;
+        }
+
+        .experience-text {
+            margin-left: 50px;
+        }
+
+        .experience-company {
+            color: #ffffff;
+        }
+
+        .center {
+           max-width: 750px;
+        }
+
+    </style>
+
+    <body>
+        <div class="center">
+            <div class="container">
+                <img alt="HeaderImage" src="/HeaderImage.jfif" class="header-image"/>
+                <div class="text-container">
+                    <h1 class="header">Geovar</h1>
+                    <p>graphics programmer · game engines · optimizations</p>
+                </div>
+            </div>
+
+            <div class="page">
+                <h2 class="header2">About</h2>
+                <p>
+                    A programmer with special interest in low-level engine and render programming.<br/>
+                    Have experience with both working on huge code bases and building engines from scratch.<br/>
+                    <br/>
+                    Currently work for Saber Interactive as a lead graphics programmer.<br/>
+                    <br/>
+                    Love optimizing games GPU performance.<br/>
+                </p>
+            </div>
+
+            <div class="page">
+                <h2 class="header2">Professional experience</h2>
+                <div class="experience">
+                    <div>
+                        <p class="experience-time">2020 - Present</p>
+                    </div>
+
+                    <div class="experience-text">
+                        <p class="experience-company">Graphics Programmer - Saber Interactive</p>
+                        <p>Enhancing graphics technology for AA and AAA games. Optimizing rendering performance to make games run fast on target hardware. Leading a small team of programmers.</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div>
+                        <p class="experience-time">2020 - 2020</p>
+                    </div>
+
+                    <div class="experience-text">
+                        <p class="experience-company">Unreal Engine Developer - a small indie game dev team</p>
+                        <p>Porting a game written in a custom engine to Unreal Engine. Physics (ship buoyancy), pathfinding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
